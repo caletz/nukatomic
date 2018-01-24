@@ -2,50 +2,79 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes" />
-    <title>NNukatomic Games - Making people happy through joyful experiences.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.png">
+    <link rel="stylesheet" href="static/css/base.css" type="text/css" />
+        <link rel="stylesheet" href="static/css/video.css" type="text/css" />
+
+    <meta http-equiv="Cache-Control" content="max-age=300"/>
+
+	
+    <title>Nukatomic Games - Making people happy through joyful experiences.</title>
     <meta name="description" content="An indie game studio in Santiago, Chile." />
+    <link rel="stylesheet" href="static/css/home_white.css" type="text/css" />
+
+</head>
+
+<!-- Fonts -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+
+ <!---------------------------------------------------------------------------------------------->
+
+<section id="intro"><img src="static/img/home/vodeci-logo.png" alt="Nukatomic Games" width="250" />
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h2>We believe in playfulness and fast shipping. No politics, no big egos. Results speak louder than words.</h2>
+  <p1><br>Making people happy through joyful experiences. Our motto.</p1>
+     <video poster="static/img/home/video.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="static/img/bettyvet.mp4" type="video/mp4">
+<source src="static/img/bettyvet.webm" type="video/webm">
+
+</video>
+
+</section>
+
+<div id="footer">
+<a href="https://facebook.com/nukatomicgames" title="Talk to nosotros">Facebook </a><a href="mailto:games@nukatomic.com?Subject=Hey,%20I'm%20Playing%20Your%20Game" target="_top">Support Mail</a>
+<a href="http://nukatomic.com/en/about" title="About US">About Us</a>
+<span>&copy; Nukatomic Spa</span>
+        
+
+</div>
+
+<section id="tercera">
+	<h6>Meet Betty Vet</h6>
+	<p>Rescue pets from all over town. Some need healing, others a shower. Be a great veterinarian!</p>
+	<p>Discover all pets  personalities with Betty.</p>
+</section>
 
 
 
-<script>
-
-/*
-Browser Language Redirect script- By JavaScript Kit
-For this and over 400+ free scripts, visit http://www.javascriptkit.com
-This notice must stay intact
-*/
-
-//Enter ISO 639-2 letter Language codes to detect (see: http://www.w3.org/WAI/ER/IG/ert/iso639.htm):
-var langcodes=new Array("es", "en", "default")
-
-//Enter corresponding redirect URLs (last one is for default URL):
-var langredirects=new Array("http://nukatomic.com/en", "http://nukatomic.com/en", "http://nukatomic.com/en")
-
-var languageinfo=navigator.language? navigator.language : navigator.userLanguage
-var gotodefault=1
-
-function redirectpage(dest){
-if (window.location.replace)
-window.location.replace(dest)
-else
-window.location=dest
-}
-
-for (i=0;i<langcodes.length-1;i++){
-if (languageinfo.substr(0,2)==langcodes[i]){
-redirectpage(langredirects[i])
-gotodefault=0
-break
-}
-}
-
-if (gotodefault)
-redirectpage(langredirects[langcodes.length-1])
+<div id="download">
+<a href="https://itunes.apple.com/us/app/XXX8"><img src="static/img/bg_button_appstore@2x.png" alt="Apple Appstore" width="250" /></a>
+</div>
 
 
-</script>
+
+<section id="cuarta">
+	<h5>Working on our first title.</h5>
+	<p>Game development it's all about putting out there our best assumptions to then measure through data and community development if we're really delivering.
+</p>
+<!--<a id="citiesbutton" href="http://nukatomic.com/app/">Downlioad</a>-->
+</section>
+
+
+
+<div id="footer">
+<a href="https://facebook.com/nukatomicgames" title="Talk to nosotros">Facebook</a>
+<a href="mailto:games@nukatomic.com?Subject=Hey,%20I'm%20Playing%20Your%20Game" target="_top">Support Mail</a>
+<a href="http://nukatomic.com/en/about" title="About US">About Us</a>
+<span>&copy; Nukatomic Games</span>
 
 
 </body>
-
 </html>
