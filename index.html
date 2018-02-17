@@ -1,51 +1,31 @@
-<!doctype html><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes" />
-    <title>Nukatomic Games - Making people happy through joyful experiences.</title>
-    <meta name="description" content="An indie game studio in Santiago, Chile." />
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Nukatomic Games - Coming Soon</title>
+  <meta name="description" content="We believe in playfulness and fast shipping. No politics, no big egos. Results speak louder than words.">
+  <meta name="viewport" content="width=device-width" />
+	<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body id="gradient">
+<section>
+	<article>
+    <h1>
+     <img src="assets/css/logo.png" alt="Nukatomic" width="320" height="119"  />
+    </h1>
+    <h2>   
+    </h2>
+		<p>
+			We believe in playfulness and fast shipping. No politics, no big egos. Results speak louder than words.</p>
+		<ul>
+			<li><a href="http://facebook.com/nukatomic">Facebook</a></li>
+			<li><a href="mailto:games@nukatomic.com">Contact</a></li>
+		</ul>
+	</article>
+</section>
 
 
 
-<script>
-
-/*
-Browser Language Redirect script- By JavaScript Kit
-For this and over 400+ free scripts, visit http://www.javascriptkit.com
-This notice must stay intact
-*/
-
-//Enter ISO 639-2 letter Language codes to detect (see: http://www.w3.org/WAI/ER/IG/ert/iso639.htm):
-var langcodes=new Array("es", "en", "default")
-
-//Enter corresponding redirect URLs (last one is for default URL):
-var langredirects=new Array("http://nukatomic.com/en", "http://nukatomic.com/en", "http://nukatomic.com/en")
-
-var languageinfo=navigator.language? navigator.language : navigator.userLanguage
-var gotodefault=1
-
-function redirectpage(dest){
-if (window.location.replace)
-window.location.replace(dest)
-else
-window.location=dest
-}
-
-for (i=0;i<langcodes.length-1;i++){
-if (languageinfo.substr(0,2)==langcodes[i]){
-redirectpage(langredirects[i])
-gotodefault=0
-break
-}
-}
-
-if (gotodefault)
-redirectpage(langredirects[langcodes.length-1])
-
-
-</script>
-
-
+<script src="assets/js/gradients.js"></script>
 </body>
-
 </html>
