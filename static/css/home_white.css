@@ -1,100 +1,3 @@
-  /* VIDEO BACKGROUND ----- VIDEO BACKGROUND ----- VIDEO BACKGROUND ----- VIDEO BACKGROUND ----- 
-    * --------------------------------------------------------------------------------------------------------------------------- */
-
-/* Style for our header texts
-    * --------------------------------------- */
-    h1{
-        font-size: 5em;
-        font-family: arial,helvetica;
-        color: #fff;
-        margin:0;
-        padding:0;
-    }
-
-    /* Centered texts in each section
-    * --------------------------------------- */
-    .section{
-        text-align:center;
-        overflow: hidden;
-    }
-
-    #myVideo{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top:0;
-        right:0;
-        width: 100%;
-        height: 100%;
-        background-size: 100% 100%;
-        background-color: black; /* in case the video doesn't fit the whole page*/
-        background-image: /* our video */;
-        background-position: center center;
-        background-size: contain;
-        object-fit: cover; /*cover video background */
-        z-index:3;
-    }
-
-
-
-    /* Layer with position absolute in order to have it over the video
-    * --------------------------------------- */
-    #section0 .layer{
-        position: absolute;
-        z-index: 4;
-        width: 100%;
-		height: 100%;
-        left: 0;
-        top: -5%;
-
-        /* 
-        * Preventing flicker on some browsers 
-        * See http://stackoverflow.com/a/36671466/1081396  or issue #183
-        */
-        -webkit-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-    }
-
-    /*solves problem with overflowing video in Mac with Chrome */
-    #section0{
-        overflow: hidden;
-        
-    }
-
-
-    /* Bottom menu
-    * --------------------------------------- */
-    #infoMenu li a {
-        color: #fff;
-    }
-
-
-    /* Hiding video controls 
-    * See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
-    * --------------------------------------- */
-    video::-webkit-media-controls {
-      display:none !important;
-    }
-
-
-  /* --------------- VIDEO BACKGROUND ------------------------
-    * --------------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-.scrollup {
-   margin: auto;
-    width: 60%;
-    border: 2px solid #ffffff;
-    padding: 10px;
-	border-radius: 8px;
-    color: #ffffff;
-}
-
-
-
 section {
     display: block;
     padding: 60px 10% 60px 10%;
@@ -105,11 +8,18 @@ section p {
     max-width: 600px;
 }
 
-
+h1 {
+	font-size: 44px;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: normal;
+	text-align: center;
+	font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
+}
 h2 {
 	font-size: 39px;
 	font-weight: 300;
-	color: #dbdbda;
+	color: #48526e;
 	margin: 20px 0;
 	line-height: normal;	
 	font-family: 'Open Sans', sans-serif;
@@ -120,7 +30,6 @@ h3 {
     margin: 20px 0;
     line-height: 1;
 }
-
 
 p {
     font-size: 25px;
@@ -133,66 +42,94 @@ p {
 
 
 
+section#logo {
+	background-color: #F0F0F0; text-align: center; padding-bottom: 0; }
+	#logo img { margin-top: -20px;  width: 200px; }
 
 section#intro {  
-background-size: 1500px auto;
-	height: 710px; 
+	background: url('../img/home/top.jpg') bottom -17% center no-repeat ;
+	background-size: 950px auto;
+	height: 717px; 
+	background-color: #F0F0F0;
 	text-align:center; 
-	
-	
+	border-style: solid;
+    border-width: 0px 1px 1px 1px;
+	border-color:#d4d4d4;
 	}
 	
     #intro p { text-align:center; margin-left: auto; margin-right: auto;}
-	
-	section#about {  
-	background: url('../img/home/about.jpg') bottom -10% center no-repeat ;
-	background-size: 1460px auto;
-	height: 710px; 
-	background-color: #c3272d;
-	text-align:center; 
-	}
-	
-    #about p { text-align:center; margin-left: auto; margin-right: auto;}
 
 
 section#segunda { 
 	 
 	background: url('../img/home/segunda@2x.jpg') bottom -7% center no-repeat ;
 	background-size: 700px 660px;
-	height: 652px; 
+	height: 810px; 
 	background-color: rgb(252,252,252);
 	text-align:center; 
 	}
-	    #segunda h5 { max-width: 750px; margin-top:-110px; margin-left: auto; margin-right: auto;}
-
-    #segunda p { max-width: 750px;  margin-left: auto; margin-right: auto;}
+    #segunda p { max-width: 750px; margin-left: auto; margin-right: auto;}
 
 	
 section#tercera{ 
 	background: url('../img/home/tercera@2x.jpg')  right no-repeat;
 	background-size: 1500px auto; 
-	height: 530px;
+	height: 720px;
 	text-align:left; 
 	margin-left: -7%;
 	background-color:#f3f3f3;
-
+	text-align:left; 
+	border-style: solid;
+    border-width: 1px 1px 1px 1px;
+	border-color:#d4d4d4;
+	
 	}
-	 #tercera p { max-width: 630px;  padding: 0 30px 0 0; margin-left: -1,2%;}
+	 #tercera p { max-width: 750px; margin-left: -1,2%;}
 
-	 #tercera h2 { max-width: 220px;
+	 #tercera h2 { max-width: 650px; margin-left: -1,2%;
 	}
 
 section#cuarta { 
  	background: url('../img/home/cuarta@2x.jpg') bottom 5% center no-repeat ;
-	background-size: 850px 535px;
-	height: 680px; 
+	background-size: 700px 435px;
+	height: 750px; 
 	background-color: rgb(252,252,252);
 	text-align:center;    
 
 	}
-	#cuarta p { max-width: 650px; margin-left: auto; margin-right: auto;}
+	#cuarta p { max-width: 550px; margin-left: auto; margin-right: auto;}
 
 
+
+
+
+
+section#humandata,
+section#press {
+    background: #f3f3f3;
+    color: rgb(187,187,187);
+
+}
+
+section#humandata {
+	height: 400px;
+	background: #f3f3f3;
+	background-size: 70%;
+	padding: 140px;
+}
+
+    #humandata h2 {
+	color: #191919;
+	text-align: center;
+	
+}
+    #press p,
+    #humandata p {
+	color: rgb(187,187,187);
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 section#press {
     border-top: 1px solid #b7b7b7;
@@ -207,6 +144,35 @@ section#press {
     #press img:hover { opacity: .8; }
 
 
+
+#citiesbutton {
+	margin-left: auto;
+	margin-right: auto;
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    border: 3px solid #e9026c;
+    color: #e9026c;
+    padding: 22px 20px 22px 20px;
+    border-radius: 50px;
+    width: 300px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+	
+} #citiesbutton:hover {
+    background: #e9026c;
+    color: #efefef;
+}
+
+
+
+
 @media screen and (max-width: 1400px) {
    section {
 	padding-top: 60px;
@@ -219,13 +185,13 @@ section#press {
 section#tercera{ 
 	background: url('../img/home/tercera@2x.jpg') right no-repeat;
 	background-size: cover; 
-	height: 420px;
+	height: 820px;
 	text-align:left; 
 	margin-left: 0%;
 	}
 	 #tercera p { max-width: 650px; margin-left: -1,2%;
 	}
-	 #tercera h2 { max-width: 550px; margin-left: -4,2%;
+	 #tercera h2 { max-width: 650px; margin-left: -1,2%;
 	}
 
 
@@ -239,18 +205,12 @@ section#tercera{
 
    section#intro {
 	   
-	height: 720px; 
+	background: url('../img/home/top.jpg') bottom -27% center no-repeat ;
+	background-size: 750px auto;
+	height: 617px; 
+	background-color: #F0F0F0;
 	text-align:center; 
 	}
-	
-	   section#about {
-	   
-	background: url('../img/home/about.jpg') bottom -27% center no-repeat ;
-	background-size: 1490px auto;
-	height: 720px; 
-	text-align:center; 
-	}
-     
      
 	section#logo {}
         #logo img { width: 150px; height:52px;}
@@ -258,12 +218,12 @@ section#tercera{
 	section#tercera{ 
 	background: url('../img/home/tercera@2x.jpg') left -10% center no-repeat;
 	background-size: 1300px auto; 
-	height: 420px;
+	height: 720px;
 	text-align:left;
 	background-color: #f3f3f3;
 	
 	}
-	 #tercera p { max-width: 320px; margin-left: -2,2%;
+	 #tercera p { max-width: 750px; margin-left: -2,2%;
 	}
 
 		
@@ -278,12 +238,9 @@ section#tercera{
 	   
 	background: url('../img/home/segunda@2x.jpg') bottom -17% center no-repeat ;
 	background-size: 600px 560px;
-	height: 567px; 
+	height: 697px; 
 	background-color: rgb(252,252,252);
-	text-align:center; }
-	
-		    #segunda h5 { max-width: 650px; margin-top:-109px; margin-left: auto; margin-right: auto;}
-
+	text-align:center; 
 
 
     section#cuarta {}
@@ -324,54 +281,43 @@ section#tercera{
     #homeLogo { position: absolute; top: 35px; left: 27%;}
 	
  	section#intro {
-	background: url('../img/clawbert.gif') bottom 7% center no-repeat ;
-	background-size: 550px auto;
-	height: 770px; 
-	text-align:center; 
-	}
-	
-	
-	section#about {
 	   
-	background: url('../img/home/about.jpg') bottom 7% center no-repeat ;
-	background-size: 1500px auto;
-	height: 720px; 
+	background: url('../img/home/top.jpg') bottom 7% center no-repeat ;
+	background-size: 350px auto;
+	height: 457px; 
+	background-color: #F0F0F0;
 	text-align:center; 
 	}
 	section#segunda {
-	background-size: 390px 377px;
-	height: 385px; 
+	background-size: 420px 401px;
+	height: 565px; 
 	background-color: rgb(252,252,252);
 	text-align:center; 
-	
+
 }
-
-		    #segunda h5 { max-width: 350px; margin-top:-69px; margin-left: auto; margin-right: auto;}
-
-
 
     section#tercera { 
 	background-size: 990px auto; 
-	background-position: 49% 35%;
-	text-align:left;
+	height: 520px;
+	background-position: 22% 65%;
+	text-align:center;
 	 }
 	
-		 #tercera p { max-width: 210px;  padding: -25px 0 0 0; margin-left: -1,2%;}
-
+	
 
     section#cuarta { 
-	background: url('../img/home/cuarta@2x.jpg') bottom 12% center no-repeat;
-	background-color: rgb(252,252,252);
-
-	background-size: 380px auto; 
-	height: 400px; }
+	background: url('../img/home/cuarta@2x.jpg') bottom 9% center no-repeat;
+	background-size: 600px auto; 
+	height: 700px; }
     section#cuarta { text-align: center; 
 
 }
 	
 	h5 {
-    font-size: 26px;
+    font-size: 16px;
+    color: #9D9D9D;
 	line-height: 1.2;
+
 	text-align:center;
 }
     #buttons {
@@ -386,7 +332,8 @@ section#tercera{
         display: inline-block;
         vertical-align:top;
 		padding-top: 250px;
-        float: none;        
+        float: none;
+        
     }
 
  
@@ -400,19 +347,3 @@ section#tercera{
        
     }
 }
-
-@media screen and (max-width: 320px) {
-
-	section#segunda {
-	background-size: 335px 305px;
-	height: 365px; 
-	background-color: rgb(252,252,252);
-	text-align:center; 
-
-}
-
-
-
-
-}
-
